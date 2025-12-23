@@ -34,7 +34,7 @@ export const customConfig = defineConfig({
             },
             fonts: {
                 accent: {
-                    value: '"Dela Gothic One", cursive'
+                    value: "'Dela Gothic One', cursive"
                 }
             }
         },

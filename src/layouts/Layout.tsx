@@ -6,11 +6,11 @@ import { FC } from 'react'
 export const Layout: FC = () => {
     return <>
         <Helmet>
-            <title>Enki</title>
-            <meta name="description" content="Enki" />
+            <title>ASCorp</title>
+            <meta name='description' content='Enki' />
         </Helmet>
-        <Box minH="100vh" minW="100vw" display="flex" flexDirection="column">
-            <Box h="full" w="full" as="main" flex="1">
+        <Box minH='100vh' minW='100vw' display='flex' flexDirection='column'>
+            <Box h='full' w='full' as='main' flex='1'>
                 <Outlet />
             </Box>
         </Box>

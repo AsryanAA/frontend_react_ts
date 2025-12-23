@@ -4,6 +4,6 @@ import { ButtonProps } from '../../types'
 import { Button } from '../../Button'
 
 // кнопка на главную
-export const HomeButton: FC<ButtonProps> = props => <Button variant="accent-outline" size="lg" rounded="full" leftIcon={<FiHome />} {...props}>
+export const HomeButton: FC<ButtonProps> = props => <Button variant='accent-outline' size='lg' rounded='full' leftIcon={<FiHome />} {...props}>
     На главную
   </Button>

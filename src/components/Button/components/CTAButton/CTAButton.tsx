@@ -5,9 +5,9 @@ import { Button } from '../../Button'
 
 // CTA кнопка (акцентная с иконкой)
 export const CTAButton: FC<ButtonProps> = props => <Button
-    variant="accent-solid"
-    size="lg"
-    rounded="full"
+    variant='accent-solid'
+    size='lg'
+    rounded='full'
     px={8}
     rightIcon={<FiArrowRight />}
     {...props}

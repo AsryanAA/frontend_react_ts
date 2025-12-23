@@ -19,16 +19,15 @@ export const Modal: FC<ModalProps> = ({ isOpen, onClose, header, body }) => {
         if (!open && !!onClose) onClose();
     }
 
-    return <Dialog.Root open={isOpen} onOpenChange={handleOpenChange} modal={true} size="sm">
-        <AnimatePresence mode="wait">
-            {isOpen && (
-                <>
+    return <Dialog.Root open={isOpen} onOpenChange={handleOpenChange} modal={true} size='sm'>
+        <AnimatePresence mode='wait'>
+            {isOpen && <>
                     <DialogBackdrop asChild>
                         <motion.div
                             variants={backdropVariants}
-                            initial="hidden"
-                            animate="visible"
-                            exit="hidden"
+                            initial='hidden'
+                            animate='visible'
+                            exit='hidden'
                             style={{
                                 position: 'fixed',
                                 inset: 0,
@@ -38,13 +37,13 @@ export const Modal: FC<ModalProps> = ({ isOpen, onClose, header, body }) => {
                         />
                     </DialogBackdrop>
 
-                    <DialogPositioner alignItems="center">
+                    <DialogPositioner alignItems='center'>
                         <DialogContent asChild>
                             <motion.div
                                 variants={modalVariants}
-                                initial="hidden"
-                                animate="visible"
-                                exit="exit"
+                                initial='hidden'
+                                animate='visible'
+                                exit='exit'
                                 style={{
                                     background: 'white',
                                     borderRadius: '16px',
@@ -54,29 +53,29 @@ export const Modal: FC<ModalProps> = ({ isOpen, onClose, header, body }) => {
                                     width: '100%'
                                 }}
                             >
-                                {!!header && <DialogHeader p="24px 24px 16px">{header}</DialogHeader>}
+                                {!!header && <DialogHeader p='24px 24px 16px'>{header}</DialogHeader>}
 
                                 {!!onClose && (
                                     <DialogCloseTrigger
-                                        position="absolute"
-                                        borderRadius="50%"
-                                        display="flex"
-                                        alignItems="center"
-                                        justifyContent="center"
-                                        p="1"
+                                        position='absolute'
+                                        borderRadius='50%'
+                                        display='flex'
+                                        alignItems='center'
+                                        justifyContent='center'
+                                        p='1'
                                         _hover={{ bg: 'black', color: 'white' }}
                                         onClick={onClose}
                                     >
-                                        <Icon as={RiCloseFill} boxSize="3" color="black.500" />
+                                        <Icon as={RiCloseFill} boxSize='3' color='black.500' />
                                     </DialogCloseTrigger>
                                 )}
 
-                                {!!body && <DialogBody p="16px 24px 24px">{body}</DialogBody>}
+                                {!!body && <DialogBody p='16px 24px 24px'>{body}</DialogBody>}
                             </motion.div>
                         </DialogContent>
                     </DialogPositioner>
                 </>
-            )}
+            }
         </AnimatePresence>
     </Dialog.Root>
 }

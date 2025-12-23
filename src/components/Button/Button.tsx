@@ -40,14 +40,14 @@ export const Button: React.FC<ButtonProps> = ({
 
     return <chakra.button
         // базовые стили
-        display="inline-flex"
-        alignItems="center"
-        justifyContent="center"
-        fontWeight="600"
-        transition="all 0.2s ease"
+        display='inline-flex'
+        alignItems='center'
+        justifyContent='center'
+        fontWeight='600'
+        transition='all 0.2s ease'
         cursor={loading ? 'wait' : disabled ? 'not-allowed' : 'pointer'}
         opacity={loading || disabled ? 0.7 : 1}
-        outline="none"
+        outline='none'
         _focusVisible={{
             boxShadow: '0 0 0 3px rgba(66, 153, 225, 0.6)'
         }}
@@ -69,31 +69,31 @@ export const Button: React.FC<ButtonProps> = ({
         pb={defaultPb}
         {...props}
     >
-        {leftIcon && <chakra.span mr={2} display="inline-flex" alignItems="center">
+        {leftIcon && <chakra.span mr={2} display='inline-flex' alignItems='center'>
                 {leftIcon}
             </chakra.span>
         }
 
         {
-            useTypography || isAccentVariant ? <Typography as="span" variant={getTypographySize()} color="inherit" {...typographyProps}>
+            useTypography || isAccentVariant ? <Typography as='span' variant={getTypographySize()} color='inherit' {...typographyProps}>
                     {children}
                 </Typography> : children
         }
 
-        {rightIcon && <chakra.span ml={2} display="inline-flex" alignItems="center">
+        {rightIcon && <chakra.span ml={2} display='inline-flex' alignItems='center'>
                 {rightIcon}
             </chakra.span>}
 
         {loading && <chakra.span ml={2}>
                 <chakra.span
-                    display="inline-block"
-                    width="1em"
-                    height="1em"
-                    border="2px solid currentColor"
-                    borderRightColor="transparent"
-                    borderRadius="full"
-                    animation="spin 0.75s linear infinite"
-                    verticalAlign="middle"
+                    display='inline-block'
+                    width='1em'
+                    height='1em'
+                    border='2px solid currentColor'
+                    borderRightColor='transparent'
+                    borderRadius='full'
+                    animation='spin 0.75s linear infinite'
+                    verticalAlign='middle'
                 />
             </chakra.span>
         }

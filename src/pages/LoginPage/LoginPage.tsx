@@ -7,7 +7,7 @@ import { LoginModal } from './components'
 export const LoginPage: FC = () => {
     // TODO: определять вошли ли уже и открывать/закрывать по умолчанию?
     // TODO: редирект если вошли
-    const [isModalOpen, setIsModalOpen] = useState(true);
+    const [ isModalOpen, setIsModalOpen ] = useState(true);
     const navigate = useNavigate()
 
     const handleSuccess = () => {

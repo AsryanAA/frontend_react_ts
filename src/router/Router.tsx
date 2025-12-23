@@ -14,7 +14,7 @@ export const Router = () => <Suspense fallback={<LoadingSpinner />}>
             <Route index element={<LoadingSpinner />} />
             {/*<Route path={RoutePaths.Admin} element={<AdminDashboardPage />} />*/}
             <Route path={RoutePaths.Login} element={<LoginPage />} />
-            <Route path="*" element={<NotFoundPage />} />
+            <Route path='*' element={<NotFoundPage />} />
         </Route>
     </Routes>
 </Suspense>

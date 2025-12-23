@@ -4,4 +4,4 @@ import { ButtonProps } from '../../types'
 import { Button } from '../../Button'
 
 // кнопка подтверждения
-export const ConfirmButton: FC<ButtonProps> = props => <Button variant="success" size="lg" leftIcon={<FiCheck />} {...props} />
+export const ConfirmButton: FC<ButtonProps> = props => <Button variant='success' size='lg' leftIcon={<FiCheck />} {...props} />

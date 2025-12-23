@@ -24,8 +24,8 @@ export const Typography: React.FC<TypographyProps> = ({
 
   return <chakra.p
       as={as}
-      margin="0"
-      padding="0"
+      margin='0'
+      padding='0'
       color={color}
       fontFamily={variantStyles.fontFamily}
       fontSize={variantStyles.fontSize}

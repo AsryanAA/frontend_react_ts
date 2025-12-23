@@ -5,7 +5,7 @@ import { Routes } from '@/router'
 
 export const NotFoundPage = () => <>
     <Helmet>
-        <title>Страница не найдена | Enki</title>
+        <title>Страница не найдена | ASCorp</title>
     </Helmet>
 
     <Container w='full' h='full' display='flex' alignItems='center'>
